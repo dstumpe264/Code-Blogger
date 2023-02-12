@@ -1,7 +1,15 @@
+# Bloggy Code Blogger
+## Created by: David Stumpe 
+### February 2023
+
+## Description
+Easy to use blog to blog all about your coding experiences. Create a new user with a password secrured using bcrypt. Sessions prevents unauthorized users from accessing unauthorized capabilities. This application uses a Model View Controller design pattern to support the seperation of functionality. Routing is handled through Express. Sequelize is used as the ORM to create data in the database from the Models.  Views are rendered using handlebars.
+
+## Instructions
+This web application is deployed on Heroku @ 
+
 ## Acceptance Criteria
 
-&#x2611;|&#x2610;
-&#x2610;
 ```md
 GIVEN a CMS-style blog site
 WHEN I visit the site for the first time
