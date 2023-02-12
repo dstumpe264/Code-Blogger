@@ -4,7 +4,7 @@ const sequelize = require('../config/connection');
 // Create a new Sequelize model
 class Post extends Model {}
 
-Example.init(
+Post.init(
   // Define fields/columns on model
   // An `id` is automatically created by Sequelize, though best practice would be to define the primary key ourselves
   {
@@ -12,8 +12,20 @@ Example.init(
       type: DataTypes.STRING
     },
     text: {
-        type: DataTypes.BLOB
-    }
+        type: DataTypes.STRING
+    },
+    date_created: {
+        type: DataTypes.DATE,
+        allowNull: false,
+        defaultValue: DataTypes.NOW
+    },
+    user_id: {
+        type: DataTypes.INTEGER,
+        references: {
+            model: 'user',
+            key: 'id'
+        },
+    },
   },
   {
     // Link to database connection

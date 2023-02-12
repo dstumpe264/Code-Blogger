@@ -3,10 +3,11 @@ const { Post } = require('../models');
 const postData = [
     {
         title: 'Initial Post',
-        text: 'Lorem Ipsum'
+        text: 'Lorem Ipsum',
+        user_id: 1
     }
 ]
 
-const seedPosts = () => Post.bulkCreate(postData);
+const seedPosts = async () => Post.bulkCreate(postData);
 
 module.exports = seedPosts;
