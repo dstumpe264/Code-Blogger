@@ -6,7 +6,7 @@
 Easy to use blog to blog all about your coding experiences. Create a new user with a password secrured using bcrypt. Sessions prevents unauthorized users from accessing unauthorized capabilities. This application uses a Model View Controller design pattern to support the seperation of functionality. Routing is handled through Express. Sequelize is used as the ORM to create data in the database from the Models.  Views are rendered using handlebars.
 
 ## Instructions
-This web application is deployed on Heroku @ 
+This web application is deployed on Heroku @ https://bloggy-code-blogger.herokuapp.com/
 
 ## Acceptance Criteria
 
